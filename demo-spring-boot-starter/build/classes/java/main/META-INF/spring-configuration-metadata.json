@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "format",
+      "type": "com.starter.autoconfiguration.DemoProperties",
+      "sourceType": "com.starter.autoconfiguration.DemoProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "format.code",
+      "type": "java.lang.String",
+      "sourceType": "com.starter.autoconfiguration.DemoProperties"
+    },
+    {
+      "name": "format.name",
+      "type": "java.lang.String",
+      "sourceType": "com.starter.autoconfiguration.DemoProperties"
+    },
+    {
+      "name": "format.style",
+      "type": "java.lang.String",
+      "sourceType": "com.starter.autoconfiguration.DemoProperties"
+    }
+  ],
+  "hints": []
+}
