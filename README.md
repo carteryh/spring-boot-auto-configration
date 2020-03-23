@@ -1,7 +1,6 @@
 # spring-boot-auto-configration
 spring boot 自动装配
 
-
 spring boot自定义starter，开发过程中，经常遇到一些通用功能，为了防止重复造轮子，我们只需要利用Spring SPI扩展，SpringBoot为我们完成自动装配。本文是基于gradle管理依赖，会对gradle做一个简单介绍。
 
 一.gradle
@@ -70,7 +69,12 @@ Gradle是一个基于Apache Ant和Apache Maven概念的项目自动化构建开�
 
 2.@EnableConfigurationProperties 和@ConfigurationProperties注解
 @ConfigurationProperties注解，通常是用来将properties和yml配置文件属性转化为bean对象使用。
-@EnableConfigurationProperties 导入启用的属性类
+@EnableConfigurationProperties 导入启用的属性类，在application.yml中就可以以属性方式来使用，并有提示，比如demo案例:
+
+	format:
+		name=chen
+		code=18
+		style=json
 
 	@Data
 	@ConfigurationProperties(prefix= DemoProperties.FORMAT_PREFIX)
